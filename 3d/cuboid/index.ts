@@ -14,7 +14,7 @@ import {
 } from "swizzler";
 import { DistanceField } from "../../distance-field";
 
-export function box(
+export function cuboid(
   size: Expression<Vec3Primitive>
 ): DistanceField<Vec3Primitive> {
   return (point) => {

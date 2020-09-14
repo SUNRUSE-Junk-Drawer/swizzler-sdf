@@ -1,9 +1,9 @@
 import { float, vec3 } from "swizzler";
-import { box } from "../..";
+import { cuboid } from "../..";
 import { prepare3d } from "../../distance-field/unit";
 
-describe("box", () => {
-  const scenario = prepare3d(box(vec3(float(5), float(2), float(3))));
+describe("cuboid", () => {
+  const scenario = prepare3d(cuboid(vec3(float(5), float(2), float(3))));
 
   scenario("origin", 0, 0, 0, -2);
   scenario("inside x+", 4.5, -1, 1.75, -0.5);
