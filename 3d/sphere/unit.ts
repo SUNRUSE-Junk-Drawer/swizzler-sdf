@@ -1,9 +1,9 @@
 import { float } from "swizzler";
 import { sphere } from "../..";
-import { prepare } from "../distance-field-3d/unit";
+import { prepare3d } from "../../distance-field/unit";
 
 describe("sphere", () => {
-  const scenario = prepare(sphere(float(3)));
+  const scenario = prepare3d(sphere(float(3)));
 
   scenario("origin", 0, 0, 0, -3);
   scenario("inside", -2.40553, 1.60416, -0.223877, -0.1);

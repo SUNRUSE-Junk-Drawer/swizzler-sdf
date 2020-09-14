@@ -1,9 +1,9 @@
-import { compileJavascript, reference } from "swizzler";
-import { DistanceField3d } from "../..";
+import { compileJavascript, reference, Vec3Primitive } from "swizzler";
+import { DistanceField } from "..";
 import ".";
 
-export function prepare(
-  distanceField: DistanceField3d
+export function prepare3d(
+  distanceField: DistanceField<Vec3Primitive>
 ): (
   description: string,
   x: number,
