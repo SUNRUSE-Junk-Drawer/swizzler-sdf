@@ -1,6 +1,8 @@
+export { translate2d } from "./2d/positioning/translate-2d";
 export { circle } from "./2d/primitives/circle";
 export { rectangle } from "./2d/primitives/rectangle";
 
+export { translate3d } from "./3d/positioning/translate-3d";
 export { cuboid } from "./3d/primitives/cuboid";
 export { sphere } from "./3d/primitives/sphere";
 
