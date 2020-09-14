@@ -2,7 +2,7 @@ import { float, vec2 } from "swizzler";
 import { rectangle, translate2d } from "../../..";
 import { prepare2d } from "../../../distance-field/unit";
 
-describe("2d", () => {
+describe("translate2d", () => {
   const scenario = prepare2d(
     translate2d(vec2(float(12), float(18)), rectangle(vec2(float(5), float(2))))
   );
