@@ -1,6 +1,6 @@
 import { float } from "swizzler";
-import { sphere } from "../..";
-import { prepare3d } from "../../distance-field/unit";
+import { sphere } from "../../..";
+import { prepare3d } from "../../../distance-field/unit";
 
 describe("sphere", () => {
   const scenario = prepare3d(sphere(float(3)));

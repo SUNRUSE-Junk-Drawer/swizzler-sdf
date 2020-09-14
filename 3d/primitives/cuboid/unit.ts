@@ -1,6 +1,6 @@
 import { float, vec3 } from "swizzler";
-import { cuboid } from "../..";
-import { prepare3d } from "../../distance-field/unit";
+import { cuboid } from "../../..";
+import { prepare3d } from "../../../distance-field/unit";
 
 describe("cuboid", () => {
   const scenario = prepare3d(cuboid(vec3(float(5), float(2), float(3))));

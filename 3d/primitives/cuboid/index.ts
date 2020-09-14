@@ -12,7 +12,7 @@ import {
   max,
   add,
 } from "swizzler";
-import { DistanceField } from "../../distance-field";
+import { DistanceField } from "../../../distance-field";
 
 export function cuboid(
   size: Expression<Vec3Primitive>

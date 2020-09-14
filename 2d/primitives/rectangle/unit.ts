@@ -1,6 +1,6 @@
 import { float, vec2 } from "swizzler";
-import { rectangle } from "../..";
-import { prepare2d } from "../../distance-field/unit";
+import { rectangle } from "../../..";
+import { prepare2d } from "../../../distance-field/unit";
 
 describe("cuboid", () => {
   const scenario = prepare2d(rectangle(vec2(float(5), float(2))));

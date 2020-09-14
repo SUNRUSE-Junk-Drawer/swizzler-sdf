@@ -1,6 +1,6 @@
 import { float } from "swizzler";
-import { circle } from "../..";
-import { prepare2d } from "../../distance-field/unit";
+import { circle } from "../../..";
+import { prepare2d } from "../../../distance-field/unit";
 
 describe("circle", () => {
   const scenario = prepare2d(circle(float(3)));

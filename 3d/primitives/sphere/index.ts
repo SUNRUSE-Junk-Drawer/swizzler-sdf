@@ -3,12 +3,12 @@ import {
   FloatPrimitive,
   length,
   subtract,
-  Vec2Primitive,
+  Vec3Primitive,
 } from "swizzler";
-import { DistanceField } from "../../distance-field";
+import { DistanceField } from "../../../distance-field";
 
-export function circle(
+export function sphere(
   radius: Expression<FloatPrimitive>
-): DistanceField<Vec2Primitive> {
+): DistanceField<Vec3Primitive> {
   return (point) => subtract(length(point), radius);
 }

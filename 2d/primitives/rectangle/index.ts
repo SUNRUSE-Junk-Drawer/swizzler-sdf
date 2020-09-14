@@ -11,7 +11,7 @@ import {
   max,
   add,
 } from "swizzler";
-import { DistanceField } from "../../distance-field";
+import { DistanceField } from "../../../distance-field";
 
 export function rectangle(
   size: Expression<Vec2Primitive>
