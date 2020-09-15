@@ -3,6 +3,7 @@ export { scale2d } from "./2d/positioning/scale-2d";
 export { translate2d } from "./2d/positioning/translate-2d";
 export { circle } from "./2d/primitives/circle";
 export { rectangle } from "./2d/primitives/rectangle";
+export { roundedRectangle } from "./2d/primitives/rounded-rectangle";
 
 export { union3d } from "./3d/combinations/union-3d";
 export { scale3d } from "./3d/positioning/scale-3d";
