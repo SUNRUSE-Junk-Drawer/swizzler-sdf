@@ -1,3 +1,4 @@
+export { calculateNormal2d } from "./2d/calculate-normal-2d";
 export { union2d } from "./2d/combinations/union-2d";
 export { scale2d } from "./2d/positioning/scale-2d";
 export { translate2d } from "./2d/positioning/translate-2d";
