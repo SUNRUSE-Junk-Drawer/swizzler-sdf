@@ -13,6 +13,11 @@ import {
 } from "swizzler";
 import { DistanceField } from "../../../distance-field";
 
+/**
+ * Creates a rectangular distance field.
+ * @param size The size of the rectangle to create.  Note that this is equivalent to a radius, not a diameter - the rectangle's dimensions will be double the components of this value.
+ * @returns A rectangular distance field of the given size.
+ */
 export function rectangle(
   size: Expression<Vec2Primitive>
 ): DistanceField<Vec2Primitive> {

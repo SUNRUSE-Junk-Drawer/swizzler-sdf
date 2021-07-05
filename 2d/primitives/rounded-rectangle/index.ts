@@ -20,6 +20,12 @@ import {
 } from "swizzler";
 import { DistanceField } from "../../../distance-field";
 
+/**
+ * Creates a rounded, rectangular distance field.
+ * @param size The size of the rectangle to create.  Note that this is equivalent to a radius, not a diameter - the rectangle's dimensions will be double the components of this value.
+ * @param borderRadius The amount of radius to apply.  X = X+/Y+, Y = X+/Y-, Z = X-/Y+, W = X-/Y-.
+ * @returns A rounded, rectangular distance field of the given size and border radius.
+ */
 export function roundedRectangle(
   size: Expression<Vec2Primitive>,
   borderRadius: Expression<Vec4Primitive>

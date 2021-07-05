@@ -14,6 +14,11 @@ import {
 } from "swizzler";
 import { DistanceField } from "../../../distance-field";
 
+/**
+ * Creates a cuboid distance field.
+ * @param size The size of the cuboid to create.  Note that this is equivalent to a radius, not a diameter - the cuboid's dimensions will be double the components of this value.
+ * @returns A cuboid distance field of the given size.
+ */
 export function cuboid(
   size: Expression<Vec3Primitive>
 ): DistanceField<Vec3Primitive> {

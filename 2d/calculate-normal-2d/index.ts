@@ -9,6 +9,13 @@ import {
 } from "swizzler";
 import { DistanceField } from "../../distance-field";
 
+/**
+ * Estimates the surface normal of the closest surface to a given point in a given distance field by taking multiple samples.
+ * @param point The point of the center from which which to sample.
+ * @param sampleDistance The maximum distance over which to perform additional samples as part of the estimation.  Larger values will make the estimation less sensitive to small values.
+ * @param distanceField The distance field to sample.
+ * @returns The estimated surface normal within the given distance field at the given point.
+ */
 export function calculateNormal2d(
   point: Expression<Vec2Primitive>,
   sampleDistance: number,
