@@ -14,8 +14,8 @@ export function prepare2d(
 
   beforeAll(() => {
     compiled = new Function(
-      "point",
-      compileJavascript("return ", distanceField(reference("vec2", "point")))
+      `point`,
+      compileJavascript(`return `, distanceField(reference(`vec2`, `point`)))
     ) as (point: readonly [number, number]) => void;
   });
 
@@ -39,8 +39,8 @@ export function prepare3d(
 
   beforeAll(() => {
     compiled = new Function(
-      "point",
-      compileJavascript("return ", distanceField(reference("vec3", "point")))
+      `point`,
+      compileJavascript(`return `, distanceField(reference(`vec3`, `point`)))
     ) as (point: readonly [number, number, number]) => void;
   });
 

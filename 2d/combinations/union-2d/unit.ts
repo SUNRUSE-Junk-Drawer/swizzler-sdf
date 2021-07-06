@@ -3,7 +3,7 @@ import { union2d, rectangle } from "../../..";
 import { prepare2d } from "../../../distance-field/unit";
 import { translate2d } from "../../positioning/translate-2d";
 
-describe("union2d", () => {
+describe(`union2d`, () => {
   const scenario = prepare2d(
     union2d(
       translate2d(
@@ -17,6 +17,6 @@ describe("union2d", () => {
     )
   );
 
-  scenario("closest to first", 18.5, 14, 0.5);
-  scenario("closest to second", 27.5, 14, 0.5);
+  scenario(`closest to first`, 18.5, 14, 0.5);
+  scenario(`closest to second`, 27.5, 14, 0.5);
 });

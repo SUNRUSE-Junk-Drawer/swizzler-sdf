@@ -3,7 +3,7 @@ import { union3d, cuboid } from "../../..";
 import { prepare3d } from "../../../distance-field/unit";
 import { translate3d } from "../../positioning/translate-3d";
 
-describe("union3d", () => {
+describe(`union3d`, () => {
   const scenario = prepare3d(
     union3d(
       translate3d(
@@ -17,6 +17,6 @@ describe("union3d", () => {
     )
   );
 
-  scenario("closest to first", 18.5, 14, 40, 0.5);
-  scenario("closest to second", 27.5, 14, 34, 0.5);
+  scenario(`closest to first`, 18.5, 14, 40, 0.5);
+  scenario(`closest to second`, 27.5, 14, 34, 0.5);
 });
